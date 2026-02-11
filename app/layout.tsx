@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import {Navbar} from "@/components/layout/Navbar";
+import {Footer} from "@/components/layout/Footer";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +15,11 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,11 +33,42 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="es">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+
+        {/* Optimización: DNS Prefetch para recursos externos */}
+        <link rel="dns-prefetch" href="https://wa.me" />
+      </head>
+
+      <body className={inter.className}>
+        {/* Accesibilidad */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-white text-black px-4 py-2 z-50"
+        >
+          Saltar al contenido
+        </a>
+
+        <div className="min-h-screen bg-gray-50 flex flex-col">
+          <Navbar />
+
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
+
+          <Footer />
+        </div>
+    
+
+        {/* JSON-LD Schemas para SEO */}
+      
+       
       </body>
     </html>
   );
