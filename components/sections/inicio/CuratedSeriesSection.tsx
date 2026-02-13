@@ -14,21 +14,21 @@ export function CuratedSeriesSection() {
         <div className="flex justify-between items-end mb-10 md:mb-12">
           <Reveal animation="slideRight">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] dark:text-white uppercase tracking-wide mb-2">
-                Curated Series
+              <h2 className="text-3xl md:text-4xl font-bold text-[#F1E2C3] dark:text-white uppercase tracking-wide mb-2">
+                Colecciones Seleccionadas
               </h2>
               <p className="text-gray-500 dark:text-gray-400">
-                Discover a watch for every facet of your life.
+                Descubre un reloj para cada aspecto de tu vida.
               </p>
             </div>
           </Reveal>
           
           <Reveal animation="fadeIn" delay={300}>
             <a
-              href="#"
+              href="/catalogo"
               className="hidden md:flex items-center text-[#D4AF37] hover:text-[#B59025] transition-colors uppercase tracking-wider text-sm font-medium group"
             >
-              View All Categories
+              Mira todo nuestro catálogo
               <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform" size={18} />
             </a>
           </Reveal>

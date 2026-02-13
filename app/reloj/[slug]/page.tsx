@@ -243,7 +243,7 @@ export default async function RelojPage({ params }: PageProps) {
             {/* ── CTA WhatsApp ── */}
             <div style={{ borderTop: "1px solid #ffffff08", paddingTop: "28px" }}>
               <a
-                href={`https://wa.me/57TU_NUMERO?text=${mensajeWhatsApp}`}
+                href={`https://wa.me/573154448156?text=${mensajeWhatsApp}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-full gap-3 uppercase font-bold transition-all duration-300 active:scale-[0.98] hover:bg-[#1ebd5b]"

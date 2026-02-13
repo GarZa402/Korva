@@ -40,7 +40,7 @@ export default function WatchCard({ reloj }: { reloj: Reloj }) {
       {/* ── Image container ── */}
       <div
         className="relative overflow-hidden"
-        style={{ aspectRatio: "3/4", background: "#0a0a0a" }}
+        style={{ aspectRatio: "1/1", background: "#0a0a0a" }}
       >
         {/* Ambient glow on hover */}
         <div
@@ -72,7 +72,7 @@ export default function WatchCard({ reloj }: { reloj: Reloj }) {
         {/* Variants badge */}
         {tieneVariantes && (
           <div
-            className="absolute top-4 left-4 z-20"
+            className="absolute top-3 left-3 z-20"
             style={{
               background: "#0d0d0dcc",
               backdropFilter: "blur(8px)",
@@ -94,7 +94,7 @@ export default function WatchCard({ reloj }: { reloj: Reloj }) {
         )}
 
         {/* Ref number — bottom of image */}
-        <div className="absolute bottom-4 left-0 right-0 flex justify-center z-20 pointer-events-none">
+        <div className="absolute bottom-3 left-0 right-0 flex justify-center z-20 pointer-events-none">
           <span
             className="uppercase font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{
@@ -110,7 +110,7 @@ export default function WatchCard({ reloj }: { reloj: Reloj }) {
 
       {/* ── Info area ── */}
       <div
-        className="flex flex-col flex-1 px-5 py-5"
+        className="flex flex-col flex-1 px-4 py-4"
         style={{ borderTop: "1px solid #ffffff06" }}
       >
         {/* Brand */}
@@ -127,10 +127,10 @@ export default function WatchCard({ reloj }: { reloj: Reloj }) {
 
         {/* Name */}
         <h3
-          className="font-bold uppercase leading-tight mb-4 transition-colors duration-300"
+          className="font-bold uppercase leading-tight mb-3 transition-colors duration-300"
           style={{
             fontFamily: "'Georgia', serif",
-            fontSize: "1rem",
+            fontSize: "0.85rem",
             letterSpacing: "0.04em",
             color: "#e2e8f0",
             lineHeight: 1.25,
@@ -141,7 +141,7 @@ export default function WatchCard({ reloj }: { reloj: Reloj }) {
 
         {/* Divider */}
         <div
-          className="h-px mb-4 flex-shrink-0"
+          className="h-px mb-3 flex-shrink-0"
           style={{
             background:
               "linear-gradient(to right, #D4AF3725, transparent)",
@@ -165,7 +165,7 @@ export default function WatchCard({ reloj }: { reloj: Reloj }) {
             <p
               style={{
                 color: "#D4AF37",
-                fontSize: "1.15rem",
+                fontSize: "1rem",
                 fontWeight: 800,
                 fontFamily: "'Georgia', serif",
                 letterSpacing: "0.02em",

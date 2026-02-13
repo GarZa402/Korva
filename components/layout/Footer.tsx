@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {Instagram, Mail} from 'lucide-react';
 
 export function Footer() {
   return (
@@ -11,11 +12,11 @@ export function Footer() {
               href="#"
               className="text-2xl font-bold tracking-[0.2em] uppercase text-white mb-6 block"
             >
-              Chronos<span className="text-[#D4AF37]">.</span>
+              KORVA<span className="text-[#D4AF37]">.</span>
             </a>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Redefining luxury since 1982. Every timepiece tells a story of
-              precision, heritage, and timeless elegance.
+              Redefiniendo el lujo desde 2026. Cada pieza cuenta una historia de
+              precisión, herencia y elegancia.
             </p>
 
             {/* Social Links */}
@@ -24,71 +25,18 @@ export function Footer() {
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-[#D4AF37] hover:text-[#020617] transition-all"
               >
-                <span className="text-xs">IG</span>
+                <Instagram className="w-5 h-5" />
               </a>
+             
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-[#D4AF37] hover:text-[#020617] transition-all"
               >
-                <span className="text-xs">FB</span>
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-[#D4AF37] hover:text-[#020617] transition-all"
-              >
-                <span className="text-xs">YT</span>
+                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          {/* Shop Column */}
-          <div>
-            <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">
-              Shop
-            </h4>
-            <ul className="space-y-4">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
-                >
-                  New Arrivals
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
-                >
-                  Best Sellers
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
-                >
-                  Classic Series
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
-                >
-                  Sport Series
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
-                >
-                  Smart Collection
-                </a>
-              </li>
-            </ul>
-          </div>
 
           {/* Support Column */}
           <div>
@@ -98,68 +46,29 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="#"
+                  href="/politica-envios"
                   className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
                 >
-                  Help Center
+                  Política de Envío
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/politica-cambios-devoluciones"
                   className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
                 >
-                  Shipping & Returns
+                  Políticas de Devolución
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/politica-garantia"
                   className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
                 >
-                  Warranty Info
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
-                >
-                  Service Centers
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[#D4AF37] transition-colors text-sm"
-                >
-                  Contact Us
+                  Política de Garantía
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Flagship Store Column */}
-          <div>
-            <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-6">
-              Flagship Store
-            </h4>
-            <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden opacity-70 hover:opacity-100 transition-opacity">
-              <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4vEmGNr45ZsXM_A1HjqXrbgS4ogfu6KcOJQ7u60jUQKpMzchdB6ehP7EthCgkgl887raFVByEx4RpuhrZaTak28g9brwxgG_rV5lpTCYXAuDKdaZFE6yViezwfJFLctbG35rgAcSMgo4WD1282RbkWDbm0ZqbpzjPdTar5d0eUezkG-2thTpgjgZNtztUDT5_SBOfxpJqOlTFsazLHTLuVcNuEDi_bMsNFtyUSrzvVLAsrnJz3wWnXQG48VJgnPjw6zVIrYRnoJQ"
-                alt="Minimalist luxury storefront interior"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <p className="text-gray-400 text-sm mb-2">152 Bond Street</p>
-            <p className="text-gray-400 text-sm">London, W1S 2TF, UK</p>
-            <a
-              href="#"
-              className="text-[#D4AF37] text-sm mt-4 inline-block hover:underline"
-            >
-              Get Directions
-            </a>
           </div>
         </div>
 

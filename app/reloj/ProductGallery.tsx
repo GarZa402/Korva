@@ -18,7 +18,7 @@ export default function ProductGallery({
       <div
         className="relative w-full overflow-hidden"
         style={{
-          aspectRatio: "4/5",
+          aspectRatio: "1/1",
           background: "#0a0a0a",
           border: "1px solid #ffffff08",
         }}

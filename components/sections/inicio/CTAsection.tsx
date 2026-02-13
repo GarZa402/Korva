@@ -1,7 +1,11 @@
 "use client";
 
-import { MessageCircle, Mail, MapPin, ArrowRight } from "lucide-react";
+import { MessageCircle, Mail, ArrowRight, Instagram } from "lucide-react";
 import Reveal from "@/components/animations/Reveal";
+
+const mensajeWhatsApp = encodeURIComponent(
+    `Hola, necesito asesoramiento sobre los modelos disponibles en tu catálogo.`
+  );
 
 export function CTAsection() {
   return (
@@ -30,7 +34,7 @@ export function CTAsection() {
             
             <div className="flex flex-wrap gap-4">
               <a 
-                href="https://wa.me/tu-numero" 
+                href={`https://wa.me/573154448156?text=${mensajeWhatsApp}`} 
                 target="_blank"
                 className="bg-[#F1E2C3] hover:bg-white text-[#020617] font-bold uppercase tracking-widest py-4 px-8 rounded-sm transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-[#D4AF37]/20"
               >
@@ -48,27 +52,30 @@ export function CTAsection() {
             <div className="bg-[#1A1A1A] p-8 rounded-sm border border-white/5 hover:border-[#F1E2C3]/50 transition-colors group">
               <Mail className="text-[#F1E2C3] mb-4 group-hover:scale-110 transition-transform" size={28} /> 
               <h3 className="text-white font-bold uppercase tracking-widest text-sm mb-2">Email</h3>
-              <p className="text-gray-500 text-sm mb-4">consultas@korva.com</p>
-              <a href="mailto:consultas@korva.com" className="text-white text-xs uppercase tracking-widest flex items-center gap-2 group-hover:text-[#F1E2C3]">
+              <p className="text-gray-500 text-sm mb-4">korvawatches@gmail.com</p>
+              <a href="mailto:korvawatches@gmail.com" className="text-white text-xs uppercase tracking-widest flex items-center gap-2 group-hover:text-[#F1E2C3]">
                 Enviar correo <ArrowRight size={14} />
               </a>
             </div>
 
             {/* Tarjeta Ubicación */}
             <div className="bg-[#1A1A1A] p-8 rounded-sm border border-white/5 hover:border-[#F1E2C3]/50 transition-colors group">
-              <MapPin className="text-[#F1E2C3] mb-4 group-hover:scale-110 transition-transform" size={28} />
-              <h3 className="text-white font-bold uppercase tracking-widest text-sm mb-2">Showroom</h3>
-              <p className="text-gray-500 text-sm mb-4">Av. Lujo 123, Madrid</p>
-              <button className="text-white text-xs uppercase tracking-widest flex items-center gap-2 group-hover:text-[#D4AF37]">
-                Ver mapa <ArrowRight size={14} />
-              </button>
+              <Instagram className="text-[#F1E2C3] mb-4 group-hover:scale-110 transition-transform" size={28} />
+              <h3 className="text-white font-bold uppercase tracking-widest text-sm mb-2">ShowRoom</h3>
+              <p className="text-gray-500 text-sm mb-4">@korva_relojes</p>
+              <a href="https://www.instagram.com/korva_relojes/" target="_blank" className="text-white text-xs uppercase tracking-widest flex items-center gap-2 group-hover:text-[#D4AF37]">
+                Ver perfil <ArrowRight size={14} />
+              </a>
             </div>
 
             {/* Tarjeta Horarios (Ocupa 2 columnas en sm) */}
             <div className="sm:col-span-2 bg-gradient-to-r from-[#1A1A1A] to-[#222] p-6 rounded-sm border border-white/5 flex items-center justify-between">
               <div>
-                <p className="text-[#F1E2C3] text-[10px] uppercase tracking-[0.2em] font-bold">Horario Global</p>
-                <p className="text-white text-sm">Lunes a Sábado: 09:00 - 20:00</p>
+                <p className="text-[#F1E2C3] text-[10px] uppercase tracking-[0.2em] font-bold mar">Horario</p>
+                <p className="text-white text-sm"><ul className="mb-2">
+                <li className="mb-2">Lunes a Viernes: 8:00 AM - 5:00 PM</li>
+                <li className="mb-2">Sábados y Domingos: 9:00 AM - 2:00 PM</li>
+                </ul></p>
               </div>
               <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
             </div>
